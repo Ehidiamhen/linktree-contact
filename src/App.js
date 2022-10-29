@@ -1,6 +1,7 @@
 import React from "react";
 import LinkButton from "./components/LinkButton";
 import ProfilePic from "./components/ProfilePic";
+import {ZURI, HNG, I4G} from "./components/Footer"
 function App() {
   return (
     <div>
@@ -50,7 +51,9 @@ function App() {
         </div>
       </div>
       <div id='footer'>
-
+        <ZURI />
+        <HNG />
+        <I4G />
       </div>
     </div>
   );
