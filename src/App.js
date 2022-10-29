@@ -2,6 +2,8 @@ import React from "react";
 import LinkButton from "./components/LinkButton";
 import ProfilePic from "./components/ProfilePic";
 import {ZURI, HNG, I4G} from "./components/Footer"
+import {Slack, Github} from "./components/Icons"
+
 function App() {
   return (
     <div>
@@ -48,6 +50,8 @@ function App() {
           name="Design Books"
         />
         <div id='slack-git'>
+          <Slack />
+          <Github />
         </div>
       </div>
       <div id='footer'>
