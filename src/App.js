@@ -1,34 +1,56 @@
 import React from "react";
 import LinkButton from "./components/LinkButton";
+import ProfilePic from "./components/ProfilePic";
 function App() {
   return (
     <div>
-      <div>
+      <div id="header">
+      <ProfilePic 
+        id='profile_img'
+      />
+      <p>Aigbiluese Ehidiamhen</p>
+      </div>
+      <div id='buttons'>
+      <LinkButton 
+        id='twitter'
+        link="https://twitter.com/ehis_eleazar" 
+        name="Twitter Link"
+      />
+      <LinkButton 
+        id='slack'
+        link="https://slack.com/reactor" 
+        name="@reactor"
+      />
         <LinkButton 
-        id='btn__zuri'
-        link="https://training.zuri.team/" 
-        name="Follow me"
+          id='btn__zuri'
+          link="https://training.zuri.team/" 
+          name="Zuri Team"
         />
         <LinkButton 
-        id='books'
-        link="http://books.zuri.team" 
-        name="Follow me"
+          id='books'
+          link="http://books.zuri.team" 
+          name="Zuri Books"
         />
         <LinkButton 
-        id='book__python'
-        link=" https://books.zuri.team/python-for-beginners?ref_id=reactor" 
-        name="Follow me"
+          id='book__python'
+          link=" https://books.zuri.team/python-for-beginners?ref_id=reactor" 
+          name="Python Books"
         />
         <LinkButton 
-        id='pitch'
-        link="https://background.zuri.team" 
-        name="Follow me"
+          id='pitch'
+          link="https://background.zuri.team" 
+          name="Background Check for Coders"
         />
         <LinkButton 
-        id='book__design'
-        link="https://books.zuri.team/design-rules" 
-        name="Follow me"
+          id='book__design'
+          link="https://books.zuri.team/design-rules" 
+          name="Design Books"
         />
+        <div id='slack-git'>
+        </div>
+      </div>
+      <div id='footer'>
+
       </div>
     </div>
   );
