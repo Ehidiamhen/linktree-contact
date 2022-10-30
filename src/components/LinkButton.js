@@ -4,10 +4,12 @@ const LinkButton = props => {
     const {
         logo,
         name, 
-        link
+        link,
+        id,
+        className
     } = props
     return (
-        <div>
+        <div className={className} id={id}>
           <a href={link} target='_blank'>{logo}{name}</a>  
         </div>
     )

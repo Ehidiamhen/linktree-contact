@@ -1,9 +1,13 @@
 import React from 'react'
 import profile from '../profile.jpg'
 
-const ProfilePic = () => {
+const ProfilePic = props => {
+    const {
+        id,
+        className
+    } = props
     return (
-        <img src={profile} alt='profile'/>
+        <img id={id} src={profile} alt='profile' className={className}/>
     )
 }
 
