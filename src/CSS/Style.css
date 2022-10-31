@@ -34,8 +34,10 @@ body {
 }
 
 .share-icons {
+    cursor: pointer;
     top: 12%;
     right: 20%;
+    z-index: 2;
 }
 
 #kebab {
@@ -61,17 +63,22 @@ body {
 
 .button {
     background-color: #EAECF0;
-    width: 80%;
-    height: 4.75rem;
+    /* width: 80%; */
     font-size: 18px;
-    padding: 1.7rem 0 1rem 0;
+    /* padding: 1.7rem 0 1rem 0; */
     border-radius: 8px;
 }
 
-a {
+.button:hover {
+    background-color: #D0D5DD;
+}
+
+.button a {
+    display: block;
+    width: 80vw;
     text-decoration: none;
+    line-height: 4.75rem;
     color: black;
-    /* font-size: 2rem; */
     font-weight: 500;
 }
 
@@ -120,8 +127,8 @@ span {
     .share-icons{
         right: 5%;
     }
-    .button {
-        width: 90%;
+    .button a{
+        width: 90vw;
     }
     #footer{
         display: flex;

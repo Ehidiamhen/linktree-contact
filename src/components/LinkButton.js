@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactTooltip from 'react-tooltip'
 
 const LinkButton = props => {
     const {
@@ -6,12 +7,16 @@ const LinkButton = props => {
         name, 
         link,
         id,
-        className
+        className,
+        subtext,
     } = props
     return (
-        <div className={className} id={id}>
-          <a href={link} target='_blank'>{logo}{name}</a>  
-        </div>
+          <div className={className} id={id}>
+            <a  data-tip data-for={id} href={link} target='_blank' rel='noreferre'>{logo}{name}</a>
+          <ReactTooltip id={id} place='bottom' effect='solid'>
+            {subtext}
+            </ReactTooltip>
+          </div>
     )
 }
 

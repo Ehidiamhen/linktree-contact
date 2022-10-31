@@ -1,5 +1,5 @@
 import React from 'react'
-import Ingressive from '../Ingressive.png'
+import Ingressive from '../images/Ingressive.png'
 
 const ZURI = props => {
     const {
