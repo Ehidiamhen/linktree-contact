@@ -1,7 +1,7 @@
-#linktree-clone
+# linktree-clone
 This is a linktree clone created as part of the HNG Internship 9 program
 
-###features:
+### features:
 
 - Profile picture
 
@@ -13,7 +13,7 @@ This is a linktree clone created as part of the HNG Internship 9 program
 
 - participating organizations
 
-###build:
+### build:
 
 - built with react 
 
