@@ -69,6 +69,12 @@ function App() {
           name="Design Books"
           subtext="Become a design wizard with all the rules at you fingertips"
         />
+        <LinkButton 
+          className='button'
+          id='contact' 
+          name="Contact Me"
+          subtext="Send me a message"
+        />
         <div id='slack-git'>
           <Slack />
           <Github />
