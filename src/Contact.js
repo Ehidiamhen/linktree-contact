@@ -2,17 +2,19 @@ import React from "react";
 import './CSS/Contact.css'
 import Footer from './Footer.js'
 import Header from './components/Contact-head.js'
-import {Input, Textarea, Checkbox} from './components/Form.js'
+import { Input, Textarea, Checkbox, Button } from './components/Form.js'
 
 const name = 'Ehidiamhen'
 
 const Contact = () => {
     return (
-        <>
+      <>
+        <div id='container'>
           <Header />
+          <div className='input-name'>
           <Input 
             id='fname'
-            className='input-name'
+            className='input-area'
             fore='name'
             label='First name'
             type='text'
@@ -20,12 +22,13 @@ const Contact = () => {
           />
           <Input 
             id='lname'
-            className='input-name'
+            className='input-area'
             fore='name'
             label='Last name'
             type='text'
             placeholder='Enter your last name'
           />
+          </div>
           <Input 
             id='email'
             className='input-email'
@@ -48,7 +51,14 @@ const Contact = () => {
             for='text'
             label={`You agree to providing your data to ${name} who may contact you.`}
           />
-          <Footer />
+          <Button
+            id='button'
+            className='submit'
+            type='button'
+            value='Send message'
+          />
+        </div>
+        <Footer />
         </>
     )
 }

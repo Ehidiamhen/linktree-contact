@@ -45,11 +45,25 @@ const Checkbox = props => {
         fore,
     } = props
     return (
-        <form>
-            <input id={id} className={className} type={type}></input>
+        <form id={id} className={className}>
+            <input type={type}></input>
             <label for={fore}>{label}<br></br></label>
         </form>
     )
 }
 
-export {Input, Textarea, Checkbox}
+const Button = props => {
+    const {
+        id,
+        className,
+        type,
+        value,
+    } = props
+    return (
+        <form>
+            <input id={id} className={className} type={type} value={value} required></input>
+        </form>
+    )
+}
+
+export { Input, Textarea, Checkbox, Button }
