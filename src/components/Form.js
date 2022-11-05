@@ -103,13 +103,13 @@ const Email = () => {
             <div className='input-name'>
                 <div>
                   <label for='text'>First name<br></br></label>
-                  <input id='fname' className='input-name' type='text' placeholder='Enter your first name'
+                  <input id='first_name' className='input-name' type='text' placeholder='Enter your first name'
                   onChange={handleFirstNameChange} value={firstName}></input>
                   {firstNameError&&<div className='error-msg'>{firstNameError}</div>}
                 </div>
                 <div>
                   <label for='text'>Last name<br></br></label>
-                  <input id='lname' className='input-name' type='text' placeholder='Enter your last name'
+                  <input id='last_name' className='input-name' type='text' placeholder='Enter your last name'
                   onChange={handleLastNameChange} value={lastName}></input>
                   {lastNameError&&<div className='error-msg'>{lastNameError}</div>}
                 </div>
@@ -117,12 +117,12 @@ const Email = () => {
 
             <label for='email'>Email<br></br></label>
             <input  type='text' placeholder='yourname@example.com'
-            onChange={handleEmailChange} value={email}></input>
+            onChange={handleEmailChange} id='email' value={email}></input>
             {emailError&&<div className='error-msg'>{emailError}</div>}
 
-            <label for='text'>Message<br></br></label>
+            <label for='text' >Message<br></br></label>
             <textarea placeholder='Send me a message and I’ll reply you as soon as possible'
-            onChange={handleMessageChange} value={message}></textarea>
+            onChange={handleMessageChange} id='message'value={message}></textarea>
             {messageError&&<div className='error-msg'>{messageError}</div>}
 
             <div  className='checkbox'>
@@ -130,7 +130,7 @@ const Email = () => {
               <label for='text'>{`You agree to providing your data to ${name} who may contact you.`}<br></br></label>
             </div>
 
-            <input id='button' className='submit' type='submit' value='Send message'></input>
+            <input id='btn_submit' className='submit' type='submit' value='Send message'></input>
           </form>
           {successMsg&&<div className='success'>{successMsg}</div>}
         </>
